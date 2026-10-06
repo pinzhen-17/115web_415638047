@@ -1,0 +1,125 @@
+/* 讓寬度計算更容易理解 */
+* {
+  box-sizing: border-box;
+}
+
+/* 整個網頁的基本設定 */
+body {
+  margin: 0;
+  color: #0b0007;
+  background-color: #c5ccd5;
+  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  line-height: 1.6;
+}
+
+/* 頁首與頁尾 */
+header,
+footer {
+  padding: 24px;
+  color: rgb(247, 239, 239);
+  text-align: center;
+  background-color: #f1aae4;
+}
+
+/* 導覽列 */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: rgb(11, 11, 11);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 主要內容 */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* 內容區段 */
+section,
+main > div {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* 標題與文字 */
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  color: #234e70;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* 圖片 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 清單 */
+li {
+  margin-bottom: 8px;
+}
+
+/* 表格 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #010811;
+  text-align: left;
+}
+
+th {
+  background-color: #dbeafe;
+}
+
+/* 手機版面 */
+@media (max-width: 600px) {
+  header,
+  footer {
+    padding: 16px;
+  }
+
+  main {
+    width: 100%;
+    padding: 16px;
+  }
+
+  section,
+  main > div {
+    padding: 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
